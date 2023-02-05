@@ -1,0 +1,50 @@
+/* <!-- QuickSand Font - Page Default Font --> */
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    background-image: url("background_title.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.aboveMain {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.submitButtonCentering {
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  top: 190% !important;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.backPosition {
+  position: absolute;
+  top: 90%;
+  left: 0%;
+}
+
+.resultSection {
+  font-size: 200px !important;
+}
