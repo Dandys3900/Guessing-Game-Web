@@ -9,42 +9,31 @@ body {
     background-size: cover;
 }
 
-.center {
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 53%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.flex-container {
+  height: 100px;
+  display: flex; 
+  padding-top: 30%; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.aboveMain {
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.flex-container > div {
+  width: 100%;
+  margin: 10px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 50px;
 }
 
-.submitButtonCentering {
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute;
-  top: 190% !important;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
+@media only screen and (max-width: 800px) {
+  body {
+    background-image: url("background_mobile.jpg");
+    object-fit: cover;
+    background-repeat: repeat;
+  }
 
-.backPosition {
-  position: absolute;
-  top: 90%;
-  left: 0%;
-}
-
-.resultSection {
-  font-size: 200px !important;
+  .flex-container {
+    padding-top: 90%;
+  }
 }

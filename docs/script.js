@@ -29,7 +29,8 @@ function startGame() {
     document.getElementById("addNameButton").style.display = "none";
     document.getElementById("backButton").style.display = "block";
     // Change background to the one without text
-    document.body.style.backgroundImage = "url('style/background_basic.png')";
+    if (window.innerWidth > 800)
+        document.body.style.backgroundImage = "url('style/background_basic.png')";
 
     selectAndSetUserName();
 }
@@ -41,7 +42,8 @@ function backToMainPage() {
     document.getElementById("backButton").style.display = "none";
     document.getElementById("nameToGuess").style.display = "none";
     // Change background to the one with text
-    document.body.style.backgroundImage = "url('style/background_title.png')";
+    if (window.innerWidth > 800)
+        document.body.style.backgroundImage = "url('style/background_title.png')";
 }
 
 function selectAndSetUserName() {

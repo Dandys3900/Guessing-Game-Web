@@ -19,30 +19,32 @@
 </head>
 
 <body>
-    <div class="center" id="startButton">
-        <input type="button" class="btn btn-outline-primary btn-lg" value="Start the Game" onclick="startGame()">
-    </div>
+    <div class="flex-container">
+        <div id="startButton">
+            <input type="button" class="btn btn-outline-primary btn-lg" value="Start the Game" onclick="startGame()">
+        </div>
+    
+        <div id="addNameButton">
+            <input type="button" class="btn btn-outline-primary btn-lg" value="Add new Name" onclick="showForm()">
+        </div>
+    
+        <div id="newNameForm" style="display:none; width: 350px;">
+            <form name="name">
+                <input class="form-control" class="rounded" class="border border-secondary" type="text" placeholder="New entry" name="newname">
+                <div>
+                    <button type="button" style="margin-top: 10px;" class="btn btn-outline-primary btn-lg"  onclick="addNewName()">Submit</button>
+                </div>
+            </form> 
+        </div>
+    
+        <!-- TODO Give it a little style -->
+        <div>
+            <div class="resultSection" id="nameToGuess"></div>
+        </div>
 
-    <div class="aboveMain" id="addNameButton">
-        <input type="button" class="btn btn-outline-primary btn-lg" value="Add new Name" onclick="showForm()">
-    </div>
-
-    <div class="backPosition" id="backButton" style="display:none">
-        <input type="button" class="btn btn-outline-primary btn-lg" value="Get Back" onclick="backToMainPage()">
-    </div>
-
-    <div class="center" id="newNameForm" style="display:none; width: 350px;">
-        <form name="name">
-            <input class="form-control" class="rounded" class="border border-secondary" type="text" placeholder="New entry" name="newname">
-            <div class="submitButtonCentering">
-                <button type="button" class="btn btn-outline-primary btn-lg"  onclick="addNewName()">Submit</button>
-            </div>
-        </form> 
-    </div>
-
-    <!-- TODO Give it a little style -->
-    <div class="center">
-        <div class="resultSection" id="nameToGuess"></div>
+        <div id="backButton" style="display:none">
+            <input type="button" style="position: absolute; top: 90%; left: 2%;" class="btn btn-outline-primary btn-lg" value="Get Back" onclick="backToMainPage()">
+        </div>
     </div>
 </body>
 </html>
